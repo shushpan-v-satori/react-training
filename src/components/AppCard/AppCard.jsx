@@ -1,4 +1,5 @@
 import React from "react";
+import Counter from "../Counter/Counter";
 import "./AppCard.scss";
 
 const AppCard = (props) => {
@@ -9,11 +10,7 @@ const AppCard = (props) => {
         <h3 className="card__role">{card.role}</h3>
       </div>
       <div className="card__counter">
-        <p>Counter</p>
-        <div className="counter__buttons">
-          <button className="buttons__button">-</button>
-          <button className="buttons__button">+</button>
-        </div>
+        <Counter />
       </div>
     </div>
   ));
