@@ -1,0 +1,24 @@
+@use "./assets/sass/_variables.scss" as *;
+
+* {
+  font-size: 20px;
+  color: $color-darkblue;
+}
+
+.app {
+  padding: 20px;
+  margin: 40px;
+  background-color: $color-grey;
+  border-radius: 20px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+  gap:  20px;
+}
+
